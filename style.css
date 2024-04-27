@@ -1,0 +1,559 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+
+ }
+ 
+.burger-menu_button {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 30;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+.burger-menu_button:hover .burger-menu_lines {
+  filter: brightness(0.7);
+}
+
+.burger-menu_button:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.burger-menu_lines::before,
+.burger-menu_lines::after,
+.burger-menu_lines {
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background-color: #1d4066;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+.burger-menu_lines {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.burger-menu_lines::before {
+  content: '';
+  top: -12px;
+}
+.burger-menu_lines::after {
+  content: '';
+  top: 12px;
+}
+
+
+.burger-menu_active .burger-menu_lines {
+  background-color: transparent;
+}
+.burger-menu_active .burger-menu_lines::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+.burger-menu_active .burger-menu_lines::after{
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+.burger-menu_nav {
+  padding-top: 120px;
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  background-color: #1d4066;
+  overflow-y: auto;
+  right: -100%;
+  -webkit-transition: 0.8s;
+  -moz-transition: 0.8s;
+  -o-transition: 0.8s;
+  transition: 0.8s;
+}
+.burger-menu_active .burger-menu_nav {
+  right: 0;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+.burger-menu_link {
+  padding: 18px 35px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 400;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+.burger-menu_link:first-child {
+  border-top: 1px solid #fff;
+}
+.burger-menu_link:hover {
+  filter: brightness(0.9);
+}
+.burger-menu_overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+}
+.burger-menu_active .burger-menu_overlay {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.pics .pict {
+  height: 80vh;
+  width: 100%;
+}
+
+
+.nav-1 {
+  display: flex;
+  width: 100%;
+  height: 14vh;
+  background-color:#1d4066;
+  }
+
+
+  #btn {
+    position: absolute;
+    top: 80%;
+    left: 20%;
+    transition: 0.5s;
+    background-image: linear-gradient(to right, #49ab29 0%, #7fc469 51%, #49ab29 100%);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    width: 16%;
+    line-height: 50px;
+    border-width: 0;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    background-size: 200% auto;
+  }
+
+  #btn:hover  {
+    background-position: right center;
+}
+
+  .row {
+    padding: 30px;
+    display: flex;
+    font-family: sans-serif;
+    color: #fff;
+  }
+
+  .icon{
+    font-size: 2rem;
+    margin: 8px;
+    transition: 0.5s;
+    color: #D2D8E0;
+  }
+
+.pad {
+  line-height: 1.5;
+}
+
+  .icon:hover {
+    transform: translateY(-10px);
+  }
+
+.logo {
+position: relative;
+display: flex;
+padding: 10px;
+}
+
+.max {
+  margin-left: 2%;
+  width: 17%;
+}
+
+.par {
+  margin-top: 40px;
+  font-family: sans-serif;
+  color: #607993;
+  margin-left: 80px;
+  font-size: 30px;
+}
+
+section {
+  display: flex;
+  font-family: sans-serif;
+
+}
+
+#section-1 {
+  background-size: cover;
+  background-color: #f5f5f7;
+  position: relative;
+}
+
+
+#section-2 {
+ background-image: url(6938858_3387682.jpg);
+ background-attachment: fixed;
+ background-size: cover;
+ color:  #1d4066;
+ height: 100vh;
+
+}
+
+#section-3 {
+ color: #000;
+  height: 50vh;
+  margin-top: 60px; 
+  background-color: #f5f5f7;
+}
+
+#section-4 {
+ background-color:#f5f5f7;
+ height: 100vh;
+display: flex;
+ font-family: 'Roboto', sans-serif;
+}
+
+#section-5 {
+  background-image: url(edited.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
+  height: 85vh;
+}
+
+.socials {
+  background-color: #1d4066;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #1d4066;
+    margin: 4%;
+}
+  .serv {    
+    width: 15%;
+    border: 2px solid #1d4066;
+    margin: 20px;
+    }
+
+
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+    margin-left: 10%;
+    color: #fff;
+    flex-wrap: wrap;
+    max-width: 500px;
+}
+  
+  .services{
+    padding: 10px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-around;
+    max-width: 500px;
+  }
+
+  .icons {
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+  }
+
+
+.main_container {
+    display: flex;
+    padding: 20px;
+    margin: 20px;
+}
+
+.images {
+  width: 420px;
+  height: 320px;
+  padding: 10px;
+  margin: 15px;
+}
+
+
+  .about-us {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-top: 8%;
+    line-height: 30px; 
+  }
+
+  .photo {
+    padding: 5%;
+    margin-top: 8%;
+  }
+
+  h2 {
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    color: #1d4066;
+  }
+
+  .feedback {
+    display:flex;
+    margin-left: 5%;
+    margin-bottom: 10%;
+    padding: 20px;
+    margin-top: 100px;
+}
+  
+
+.form-inner input, .form-inner textarea {
+  display:block;
+  background: #e9e3df;
+  width: 120%;
+  padding: 0 20px;
+  margin-bottom: 10px;
+  line-height: 50px;
+  border-width: 0;
+  border-radius: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.form-inner input[type="submit"] {
+  margin-top: 30px;
+  background: #006cb5 ;
+  border-bottom: 4px solid #006cb5 ;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form-inner textarea {
+  resize: none;
+}
+
+.contacts {
+display: flex;
+flex-direction: column;
+margin-left: 330px;
+margin-top: 20px;
+}
+
+.telegramim_button {
+  position: fixed;
+  right: 13px;
+  bottom: 90px;
+}
+
+
+@media all and (max-width:800px) {
+    .par {
+      margin-top: 20px;
+      margin-left: 20px;
+
+    }
+
+
+
+#section-3 {
+   height: 30vh;
+   margin-top: 60px; 
+   background-color: #f5f5f7;
+ }
+
+
+}
+
+@media all and (max-width:500px) {
+  
+  .nav-1 {
+    display: none;
+  }
+  
+  .logo {
+    display: flex;
+    flex-direction: column;
+  
+    }
+    
+    .max {
+      width: 60%;
+      margin-left: 0;
+    }
+    
+    .par {
+      margin-top: 20px;
+      margin-left: 10px;
+      font-size: 20px;
+  
+    }
+  
+    .pics .pict {
+      height: 30vh;
+      width: 100%;
+    }
+  
+  
+    #btn {
+      top: 73%;
+      left: 14%;
+      font-size: 14px;
+      width: 28%;
+      line-height: 40px;
+    }
+  
+  #section-3 {
+     height: 110vh;
+     margin-top: 1px; 
+   }
+  
+  .main_container {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+  }
+  
+  .images {
+  width: 360px;
+  height: 220px;
+  padding: 5px;
+  margin-left: 0;
+    opacity:0.8;
+  }
+  
+    .header {
+    font-size: 15px;
+    margin-top: 4%;
+  }
+  
+  #section-2 {
+    display: flex;
+    flex-direction: column;
+    height: 150vh;
+    background-image: none;
+  }
+  
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+    margin-left: 0;
+    max-width: 500px;
+  }
+  
+  .services{
+    padding: 30px;
+    font-size: 15px;
+    display: flex;
+  }
+  
+  .icons {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+  }
+  
+  #section-4 {
+    height: 130vh;
+   display: flex;
+   flex-direction:column;
+   }
+  
+   #section-5 {
+    height: 90vh;
+     background-image:none;
+    background-color:#f5f5f7;
+  }
+  
+  
+  .feedback {
+    display:flex;
+    flex-direction: column;
+    margin-left: 1%;
+    margin-bottom: 10%;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .form-inner input, .form-inner textarea {
+    background: #fff;
+    width: 90%;
+  }
+  
+  
+  .contacts {
+    display: flex;
+    flex-direction: row;
+    margin-left: 1px;
+    margin: 10px;
+    text-decoration: none;
+  }
+    
+    .telegramim_button {
+      position: fixed;
+      right: 13px;
+      bottom: 30px;
+    }
+  
+  
+    .row {
+      margin-top: 20px;
+      padding: 1px;
+      font-size: 12px;
+      color: #1d4066;
+    }
+  
+  
+    .socials {
+      flex-direction: column;
+      padding: 1px;
+    }
+  
+    .center {
+      color: #1d4066;
+    }
+  
+    span {
+      display: none;
+    }
+  
+    .photo {
+      padding: 4%;
+      margin-top: 0;
+    }
+  
+    h3 {
+      color: #1d4066;
+    }
+  
+    .icon{
+   display: none;
+    }
+   
+      h4 {
+      color: #1d4066;
+    }
+    
+  }
